@@ -4,9 +4,9 @@ console.log('Starting...')
 
 function createBot () {
     const bot = mineflayer.createBot({
-    host: "localhost",
-    port: "25565",
-    username: "Test",
+    host: "mcvajaru.aternos.me",
+    port: "58409",
+    username: "timit",
     version: false
     })
     bot.on('login', function() {
@@ -17,12 +17,12 @@ function createBot () {
       target = bot.players[username].entity
       let entity
       switch (message) {
-        case ';start':
+        case ';st':
           bot.setControlState('forward', true)
           bot.setControlState('jump', true)
           bot.setControlState('sprint', true)
           break
-          case ';stop':
+          case ';po':
             bot.clearControlStates()
             break
           }
